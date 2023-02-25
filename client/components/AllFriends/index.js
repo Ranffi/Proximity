@@ -16,12 +16,19 @@ import { mainOrange } from '../styledComponents/globalStyles';
  *
  * @param {*} userId
  */
+
 const drawGraph = (userId) => {
   const config = {
     container_id: 'viz',
-    server_url: process.env.NEO4J_URI,
-    server_user: process.env.NEO4J_USER,
-    server_password: process.env.NEO4J_PASSWORD,
+    neo4j: {
+      serverUrl: `neo4j${process.env.NEO4J_URI.slice(7)}`,
+      serverUser: process.env.NEO4J_USER,
+      serverPassword: process.env.NEO4J_PASSWORD,
+      driverConfig: {
+        encrypted: "ENCRYPTION_ON",
+        trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES"
+      }
+    },
     labels: {
       User: {
         caption: 'name',
