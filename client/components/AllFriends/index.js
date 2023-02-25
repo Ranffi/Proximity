@@ -2,7 +2,7 @@
 /* eslint-disable camelcase */
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import NeoVis from 'NeoVis.js';
+import NeoVis from 'neovis.js';
 import { Container, Card } from '../styledComponents';
 import { WideColumnContainer, Graph } from './StyleElements';
 import AddFriend from '../AddFriend';
