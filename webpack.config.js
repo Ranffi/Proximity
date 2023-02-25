@@ -1,4 +1,4 @@
-const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack')
 
 module.exports = {
 	entry: ["./client/index.js"],
@@ -33,6 +33,8 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new Dotenv()
-	]
+		new webpack.DefinePlugin({
+			'process.env.MAPBOXPK': JSON.stringify(process.env.MAPBOXPK),
+		})
+	],
 }
