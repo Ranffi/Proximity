@@ -1,8 +1,18 @@
 /*  GENERAL STYLING */
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
+}
+
+#root {
+  height: 100%;
 }
 
 h2 {
@@ -93,6 +103,7 @@ h1 {
   margin-bottom: 0;
   margin-left: 16px;
 }
+
 .profile-heading h3,
 .profile-heading p {
   margin-bottom: 0;

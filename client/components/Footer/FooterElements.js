@@ -7,7 +7,7 @@ import {
 
 export const FooterWrap = styled.footer`
   background: ${mainDarkGreen};
-  padding: 10px;
+  padding: 13px;
   display: flex;
   justify-content: center;
   flex-direction: column;

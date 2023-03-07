@@ -6,7 +6,7 @@ import {
 
 export const HeroContainer = styled.nav`
   background: ${secondaryBeige};
-  height: 600px;
+  height: 691px;
   padding: 0 10px;
   display: flex;
   justify-content: center;
